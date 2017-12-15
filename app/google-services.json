@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "820629130263",
+    "firebase_url": "https://eschool-a26c0.firebaseio.com",
+    "project_id": "eschool-a26c0",
+    "storage_bucket": "eschool-a26c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820629130263:android:8f90010a2f644757",
+        "android_client_info": {
+          "package_name": "sas.eschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820629130263-v81qd9hvt8cjvi7iesjkmchhcp9ujkru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sas.eschool",
+            "certificate_hash": "9ce3be2b94b52603c2cfc9b639e2b8d61c433399"
+          }
+        },
+        {
+          "client_id": "820629130263-fsgbhju8vcrleslj7ngc690og73dsopi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtSx6XKzsUa6UAq99xeWvLxTWtDQBHhmg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820629130263-fsgbhju8vcrleslj7ngc690og73dsopi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
