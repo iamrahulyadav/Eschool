@@ -12,7 +12,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+
+import sas.eschool.fragment.Events_parentsFragment;
+import sas.eschool.fragment.StudentsList_msging;
+import sas.eschool.fragment.TeachersList_messging;
 
 public class ParentSideMenu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -24,15 +27,11 @@ public class ParentSideMenu extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show());
-
-        fab.setOnClickListener(v -> {
-
-            Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG);
-//                .setAction("Action", null).show());
-        });
+    FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(view ->
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, new TeachersList_messging()).commit()
+        );
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -42,6 +41,8 @@ public class ParentSideMenu extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.container, new Events_parentsFragment()).commit();
     }
 
     @Override
@@ -84,20 +85,30 @@ public class ParentSideMenu extends AppCompatActivity
 
         if (id == R.id.nav_learning_support) {
 
+
         } else if (id == R.id.nav_massaging) {
 
-            startActivity(new Intent(this , Teacher_list.class));
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, new TeachersList_messging()).commit();
+
 
         } else if (id == R.id.nav_class_room) {
 
-            startActivity(new Intent(this,StudentsList_classRoom.class));
-//            this.finish();
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, new StudentsList_msging()).commit();
+
 
         } else if (id == R.id.nav_home_work) {
 
+
         } else if (id == R.id.nav_events)
 
-            startActivity(new Intent(this, EventList.class));
+        {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, new Events_parentsFragment()).commit();
+        }
+
+//            startActivity(new Intent(this, EventList.class));
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
