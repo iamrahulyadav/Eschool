@@ -47,6 +47,8 @@ dependencies {
     // compile 'com.google.guava:guava:23.5-android'
     //gson
     compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.github.vipulasri:timelineview:1.0.5'
+
 }
 
 
