@@ -24,22 +24,24 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#edf0f4"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="10">
 
         <EditText
             android:id="@+id/message_edittext"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="9"
             android:ems="10"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/send_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="1dp"
             android:layout_weight="1"
-            android:text="Send" />
+            android:background="@drawable/send" />
     </LinearLayout>
 
 </RelativeLayout>

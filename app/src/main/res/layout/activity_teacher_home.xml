@@ -17,49 +17,53 @@
 
     <android.support.v7.widget.CardView
         android:layout_weight="1"
-        android:layout_margin="3dp"
+        android:layout_margin="4dp"
         android:layout_width="0dp"
-        android:layout_height="wrap_content">
+        android:layout_height="200dp">
         <ImageView
             android:id="@+id/mesg_cl"
             android:padding="6dp"
+            android:layout_gravity="center"
             android:src="@drawable/messages"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="185dp" />
     </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_margin="3dp"
-            android:layout_height="wrap_content">
+            android:layout_height="200dp">
             <ImageView
                 android:padding="6dp"
+                android:layout_gravity="center"
                 android:id="@+id/class_cl"
                 android:src="@drawable/class_room"
                 android:layout_width="wrap_content"
-                android:layout_height="155dp" />
+                android:layout_height="185dp" />
 
     </android.support.v7.widget.CardView>
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:weightSum="2"
-        android:layout_margin="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <android.support.v7.widget.CardView
             android:layout_weight="1"
-            android:layout_margin="3dp"
+            android:layout_margin="4dp"
             android:layout_width="0dp"
-            android:layout_height="wrap_content">
+            android:layout_height="200dp">
             <ImageView
                 android:padding="6dp"
                 android:id="@+id/event_cl"
+                android:layout_gravity="center"
                 android:src="@drawable/events"
                 android:layout_width="match_parent"
-                android:layout_height="155dp" />
+                android:layout_height="185dp" />
         </android.support.v7.widget.CardView>
     </LinearLayout>
 
