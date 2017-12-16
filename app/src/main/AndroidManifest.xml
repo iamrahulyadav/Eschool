@@ -3,6 +3,7 @@
     package="sas.eschool">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".config"
         android:allowBackup="true"
@@ -14,15 +15,17 @@
         <activity
             android:name=".Chat"
             android:label="@string/title_activity_chat"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <service
-            android:name=".PushReceiver">
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".PushReceiver">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <activity android:name="com.sas48.MainActivity"
-            android:label="Choose user .."/>
+
+        <activity
+            android:name="com.sas48.MainActivity"
+            android:label="Choose user .." />
         <activity android:name=".LoginActivity" />
         <activity android:name=".kidLogin" />
         <activity android:name=".EventList" />
@@ -39,11 +42,9 @@
             android:label="@string/title_activity_parent_side_menu"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TechersList_p" />
-        <activity android:name=".Studentdetails_classRoom"/>
-
-
-
-
+        <activity android:name=".Studentdetails_classRoom" />
+        <activity android:name=".TeacherHome" />
+        <activity android:name=".ClassRoom_teacher"></activity>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.support.v7.widget.CardView
 import sas.eschool.LoginActivity
 import sas.eschool.R
 import sas.eschool.kidLogin
+import sas.eschool.pojo.currentuser
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,9 +20,14 @@ class MainActivity : AppCompatActivity() {
         val teacher = findViewById<CardView>(R.id.teacher)
         val admin = findViewById<CardView>(R.id.admin)
 
+
         kid.setOnClickListener { startActivity(Intent(this, kidLogin::class.java)) }
-        teacher.setOnClickListener { startActivity(Intent(this, LoginActivity::class.java)) }
-        parant.setOnClickListener { startActivity(Intent(this, LoginActivity::class.java)) }
+        teacher.setOnClickListener {
+            currentuser.usertype = "teacher"
+            startActivity(Intent(this, LoginActivity::class.java)) }
+        parant.setOnClickListener {
+            currentuser.usertype = "parent"
+            startActivity(Intent(this, LoginActivity::class.java)) }
         admin.setOnClickListener { startActivity(Intent(this, LoginActivity::class.java)) }
 
     }

@@ -28,13 +28,10 @@ public class ParentSideMenu extends AppCompatActivity
         fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show());
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        fab.setOnClickListener(v -> {
 
-                Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG);
+            Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG);
 //                .setAction("Action", null).show());
-            }
         });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -97,8 +94,6 @@ public class ParentSideMenu extends AppCompatActivity
         } else if (id == R.id.nav_home_work) {
 
         } else if (id == R.id.nav_events) {
-
-
 
         }
 
