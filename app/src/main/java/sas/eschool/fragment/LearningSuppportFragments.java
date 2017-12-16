@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -17,9 +18,6 @@ import com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView;
 
 import java.util.Observable;
 
-import io.reactivex.Scheduler;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
 import sas.eschool.Dialog.Youtube;
 import sas.eschool.R;
 
@@ -40,8 +38,16 @@ public class LearningSuppportFragments extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_learning_suppport_fragments, container, false);
 
-        Youtube youtube=new Youtube(getActivity());
-        youtube.show();
+        ImageView youtube= v.findViewById(R.id.video_play);
+
+        youtube.setOnClickListener(v1 -> {
+
+            Youtube youtube1=new Youtube(getActivity());
+            youtube1.show();
+        });
+//        youtube.show();
+
+
 //        YouTubePlayerView youTubePlayerView = v.findViewById(R.id.youtube_player_view);
 //        io.reactivex.Observable.just(youTubePlayerView)
 //                .subscribeOn(Schedulers.io())
@@ -58,7 +64,6 @@ public class LearningSuppportFragments extends Fragment {
 //                initializedYouTubePlayer.loadVideo(videoId, 10);
 //            }
 //        }), true);
-
 
         return v;
     }

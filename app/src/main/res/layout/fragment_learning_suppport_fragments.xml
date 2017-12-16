@@ -99,7 +99,18 @@
                         android:text="Useful material for the Kids .."
                         android:textSize="16dp" />
 
+                    <ImageView
+                        android:id="@+id/video_play"
+                        android:padding="7dp"
+                        android:src="@drawable/img_cap"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
 
+                    <!--<com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView-->
+                        <!--android:id="@+id/youtube_player_view"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="7dp" />-->
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
