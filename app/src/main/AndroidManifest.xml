@@ -44,7 +44,11 @@
         <activity android:name=".TechersList_p" />
         <activity android:name=".Studentdetails_classRoom" />
         <activity android:name=".TeacherHome" />
-        <activity android:name=".ClassRoom_teacher"></activity>
+        <activity android:name=".ClassRoom_teacher" />
+        <activity
+            android:name=".StudentList"
+            android:label="@string/title_activity_student_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
