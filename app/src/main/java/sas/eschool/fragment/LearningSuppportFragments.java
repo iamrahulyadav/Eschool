@@ -15,6 +15,8 @@ import com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayer;
 import com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerInitListener;
 import com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView;
 
+import java.util.Observable;
+
 import sas.eschool.R;
 
 /**
@@ -43,6 +45,8 @@ public class LearningSuppportFragments extends Fragment {
                 initializedYouTubePlayer.loadVideo(videoId, 10);
             }
         }), true);
+
+
         return v;
     }
 

@@ -19,7 +19,6 @@ class Teacher_list : AppCompatActivity() {
 
         findViewById<CardView>(R.id.first_teacher).setOnClickListener {
             startActivity(Intent(this@Teacher_list, Chat::class.java))
-
         }
     }
 

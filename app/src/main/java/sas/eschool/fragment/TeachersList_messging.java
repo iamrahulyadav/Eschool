@@ -26,6 +26,9 @@ public class TeachersList_messging extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_teachers_list_messging, null, false);
         CardView teacher = view.findViewById(R.id.first_teacher);
+        teacher.setOnClickListener(v -> {
+            startActivity(new Intent(getActivity(), Chat.class));
+        });
         return view;
     }
 
