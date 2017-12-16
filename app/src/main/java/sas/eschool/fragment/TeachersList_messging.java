@@ -24,7 +24,7 @@ public class TeachersList_messging extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_teachers_list_messging, container, false);
+        View view = inflater.inflate(R.layout.fragment_teachers_list_messging, null, false);
         CardView teacher = view.findViewById(R.id.first_teacher);
         teacher.setOnClickListener(v -> {
             startActivity(new Intent(getActivity(), Chat.class));
