@@ -86,6 +86,8 @@ public class ParentSideMenu extends AppCompatActivity
 
         } else if (id == R.id.nav_massaging) {
 
+            startActivity(new Intent(this , Teacher_list.class));
+
         } else if (id == R.id.nav_class_room) {
 
             startActivity(new Intent(this,StudentsList_classRoom.class));
@@ -93,9 +95,9 @@ public class ParentSideMenu extends AppCompatActivity
 
         } else if (id == R.id.nav_home_work) {
 
-        } else if (id == R.id.nav_events) {
+        } else if (id == R.id.nav_events)
 
-        }
+            startActivity(new Intent(this, EventList.class));
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

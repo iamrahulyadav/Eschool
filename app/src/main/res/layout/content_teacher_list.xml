@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Teacher_list"
-    tools:showIn="@layout/activity_student_list">
+    tools:showIn="@layout/activity_teacher_list">
 
 
     <LinearLayout
@@ -28,11 +28,11 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/imageView1"
                     android:layout_width="200dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/teacher" />
+                    app:srcCompat="@drawable/teacher_2" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -45,7 +45,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Mohammed Al Jahwari" />
+                        android:text="Ibrahim Al Jahwari" />
 
                     <TextView
                         android:id="@+id/textView7"
@@ -73,7 +73,7 @@
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/teacher_2" />
+                    app:srcCompat="@drawable/teacher_1" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -112,7 +112,7 @@
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/teacher_1" />
+                    app:srcCompat="@drawable/teacher" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -137,44 +137,7 @@
 
         </android.support.v7.widget.CardView>
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginBottom="8dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/girl_5" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Marwa Al Khrusi" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="class : 4/1" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
 
     </LinearLayout>
 </ScrollView>

@@ -23,10 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         kid.setOnClickListener { startActivity(Intent(this, kidLogin::class.java)) }
         teacher.setOnClickListener {
-            currentuser.usertype = "teacher"
+            currentuser.usertype = "parent"
             startActivity(Intent(this, LoginActivity::class.java)) }
         parant.setOnClickListener {
-            currentuser.usertype = "parent"
+            currentuser.usertype = "teacher"
             startActivity(Intent(this, LoginActivity::class.java)) }
         admin.setOnClickListener { startActivity(Intent(this, LoginActivity::class.java)) }
 

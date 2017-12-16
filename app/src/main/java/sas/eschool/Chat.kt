@@ -13,6 +13,7 @@ import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.content_chat.*
 import sas.eschool.adapters.Parent_TeacherMessagesAdapter
 import sas.eschool.pojo.NewMessage
+import sas.eschool.pojo.currentuser
 
 
 class Chat : AppCompatActivity() {
@@ -76,10 +77,15 @@ class Chat : AppCompatActivity() {
         send_btn.setOnClickListener({
             var ref_send = FirebaseDatabase.getInstance()
                     .getReference("chat/es12_pr12_chat/"+newMessages)
-            ref_send.setValue(NewMessage("parent", message_edittext.text.toString(), 12, 12, newMessages))
+            if(currentuser.usertype.equals("parent")){
+                ref_send.setValue(NewMessage("teacher", message_edittext.text.toString(), 12, 12, newMessages))
+
+            }else{
+                ref_send.setValue(NewMessage("parent", message_edittext.text.toString(), 12, 12, newMessages))
+
+            }
 
         })
-
 
     }
 

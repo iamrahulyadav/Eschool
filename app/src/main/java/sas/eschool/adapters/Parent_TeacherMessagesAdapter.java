@@ -40,7 +40,7 @@ public class Parent_TeacherMessagesAdapter extends RecyclerView.Adapter<Parent_T
 
     @Override
     public void onBindViewHolder(MessageViewHolder holder, final int position) {
-        if(messages.get(position).getFrom().equals("teacher")){
+        if(messages.get(position).getFrom().equals("parent")){
             holder.mesg_positioner.setGravity(Gravity.LEFT);
             holder.name.setText(currentuser.INSTANCE.getTeachername());
         }else{

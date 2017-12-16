@@ -19,12 +19,12 @@ public class TeacherHome extends AppCompatActivity {
 
 
         mesg_cl.setOnClickListener(v -> {
-
-
+            startActivity(new Intent(TeacherHome.this , StudentList.class));
         });
 
-
         class_cl.setOnClickListener(v -> {
+
+            startActivity(new Intent(TeacherHome.this , ClassRoom_teacher.class));
 
         });
 

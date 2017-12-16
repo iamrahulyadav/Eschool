@@ -3,13 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f4eaea"
     android:layout_height="match_parent"
     tools:context=".ClassRoom_teacher">
 
     <android.support.v7.widget.CardView
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
+            android:padding="4dp"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -18,6 +26,122 @@
                 android:textSize="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:drawableTop="@drawable/add_event"
+                    android:layout_width="wrap_content"
+                    android:text="Add Event"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:drawableTop="@drawable/add_point"
+                    android:layout_width="wrap_content"
+                    android:text="Add Point"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:drawableTop="@drawable/check_list"
+                    android:layout_width="wrap_content"
+                    android:text="Attendance"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_margin="30dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="CLass Name : Arabic"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:drawableTop="@drawable/add_event"
+                    android:layout_width="wrap_content"
+                    android:text="Add Event"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:drawableTop="@drawable/add_point"
+                    android:layout_width="wrap_content"
+                    android:text="Add Point"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:drawableTop="@drawable/check_list"
+                    android:layout_width="wrap_content"
+                    android:text="Attendance"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="CLass Name : English"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:drawableTop="@drawable/add_event"
+                    android:layout_width="wrap_content"
+                    android:text="Add Event"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:drawableTop="@drawable/add_point"
+                    android:layout_width="wrap_content"
+                    android:text="Add Point"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:drawableTop="@drawable/check_list"
+                    android:layout_width="wrap_content"
+                    android:text="Attendance"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
 
 
         </LinearLayout>
