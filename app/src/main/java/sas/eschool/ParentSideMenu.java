@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import sas.eschool.fragment.Events_parentsFragment;
+import sas.eschool.fragment.LearningSuppportFragments;
 import sas.eschool.fragment.StudentsList_msging;
 import sas.eschool.fragment.TeachersList_messging;
 
@@ -85,6 +86,8 @@ public class ParentSideMenu extends AppCompatActivity
 
         if (id == R.id.nav_learning_support) {
 
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, new LearningSuppportFragments()).commit();
 
         } else if (id == R.id.nav_massaging) {
 
