@@ -14,22 +14,35 @@
         <activity
             android:name=".Chat"
             android:label="@string/title_activity_chat"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar"/>
         <service
             android:name=".PushReceiver">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
+        <activity android:name="com.sas48.MainActivity"
+            android:label="Choose user .."/>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".kidLogin" />
+        <activity android:name=".EventList" />
+        <activity android:name=".StudentsList_classRoom" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ParentSideMenu"
+            android:label="@string/title_activity_parent_side_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TechersList_p" />
+        <activity android:name=".Studentdetails_classRoom"/>
+
+
+
 
     </application>
 

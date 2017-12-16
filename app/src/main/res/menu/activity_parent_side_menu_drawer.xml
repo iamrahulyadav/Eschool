@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_learning_support"
+            android:icon="@drawable/icon"
+            android:title="Learning Suppport" />
+        <item
+            android:id="@+id/nav_massaging"
+            android:icon="@drawable/msg"
+            android:title="Massaging" />
+
+        <item
+            android:id="@+id/nav_class_room"
+            android:icon="@drawable/learning"
+            android:title="ClassRoom" />
+
+        <item
+            android:id="@+id/nav_home_work"
+            android:icon="@drawable/homework"
+            android:title="HomeWork" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/event"
+            android:title="Events" />
+    </group>
+</menu>
